@@ -11,9 +11,9 @@ First, we use the Fast-Marching Algorithm to create a distance map on the image.
 ![Teaser Image](/illustration_results/01-sample_curve.png)\
 the Fast-Marching, derives automatically the potential map shown below:\
 ![Teaser Image](/illustration_results/03-final_fast_marching.png)\
-The Fast-Marching algorithm might be implemented via two techniques:\
-- Djisktra (L1 norm neighborhood)\
-- Eikonal equation (L2 norm neighborhood)\
+The Fast-Marching algorithm might be implemented via two techniques:
+- Djisktra (L1 norm neighborhood)
+- Eikonal equation (L2 norm neighborhood)
 
 ### Automatic path specification ###
 
@@ -22,13 +22,13 @@ Using this algorithm, on a open curve:\
 We derive the chart distance:\
 ![Teaser Image](/illustration_results/05-final_fast_marching.png)\
 And using back propagation to find the geodesic, we find a potential path on the image:\
-![Teaser Image](/illustration_results/06-backpropagation_parametric_path.png)\
+![Teaser Image](/illustration_results/06-backpropagation_parametric_path.png)
 
 ### Complex curve ###
 
 On more complex curves, this technique is not robust, see the following figures:\
 ![Teaser Image](/illustration_results/07-complex_curve.png)\
-![Teaser Image](/illustration_results/08-failure_backpropag.png)\
+![Teaser Image](/illustration_results/08-failure_backpropag.png)
 
 ### Minimal Path Keypoint Detection ###
 
@@ -36,7 +36,7 @@ To avoid this, the authors introduce a method based on intermediary computation 
 (kind of step by step geodesic), that will be more robust than the Fast-Marching applied directly.
 
 ![Teaser Image](/illustration_results/09-minimal_keypoint.png)\
-[Teaser Image](/illustration_results/10-keypoint_detection.png)\
+![Teaser Image](/illustration_results/10-keypoint_detection.png)\
 
 Using some conditions specifications on the distance between three following keypoints, we can even 
 come up with a method where we don't need to specify starting and ending points. See the figures below:\
